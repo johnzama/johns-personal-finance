@@ -1,0 +1,99 @@
+/* src/pages/Overview.css */
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.total-expenses {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.total-expenses h2 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.expense-amount {
+  font-size: 2.5rem;
+  color: #ff5370;
+  margin: 10px 0;
+}
+
+.expense-month {
+  font-size: 1rem;
+  color: #888;
+}
+
+.key-insights {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.insight {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.insight p {
+  margin: 5px 0;
+}
+
+.insight-amount {
+  font-size: 1.5rem;
+  color: #ff5370;
+}
+
+.insight-category {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.expense-chart {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Expense Form Styles */
+.expense-form {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.expense-form input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+  min-width: 120px;
+}
+
+.expense-form button {
+  padding: 8px 12px;
+  background-color: #ff5370;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.expense-form button:hover {
+  background-color: #e04a60;
+}
+
