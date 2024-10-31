@@ -74,6 +74,37 @@ const Overview = () => {
         borderWidth: 1,
       },
     ],
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+      },
+      layout: {
+        padding: {
+          top: 10,
+          bottom: 10,
+        },
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            stepSize: 200, // Adjust based on data range
+          },
+          grid: {
+            display: true,
+            drawBorder: false,
+            color: "rgba(200, 200, 200, 0.2)",
+          },
+        },
+        x: {
+          grid: {
+            display: false,
+          },
+        },
+      },
+    },
   };
 
   return (
@@ -110,7 +141,7 @@ const Overview = () => {
       </div>
       <div className="expense-chart">
         <h3>Expense Distribution</h3>
-        <Bar data={chartData} options={{ responsive: true, plugins: { legend: { display: false } } }} />
+        <Bar data={chartData} options={chartData.options} />
       </div>
       <BudgetForm onSetBudget={onSetBudget} />
       <div className="budget-section">
