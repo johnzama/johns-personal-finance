@@ -3,42 +3,43 @@
 .overview {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
+  padding: 10px;
 }
 
 .total-expenses {
   background-color: #fff;
-  padding: 20px;
+  padding: 15px;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .total-expenses h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #333;
 }
 
 .expense-amount {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #ff5370;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .expense-month {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #888;
 }
 
 .key-insights {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   justify-content: space-around;
 }
 
 .insight {
   background-color: #fff;
-  padding: 15px;
+  padding: 10px;
   border-radius: 8px;
   text-align: center;
   flex: 1;
@@ -46,45 +47,52 @@
 }
 
 .insight p {
-  margin: 5px 0;
+  margin: 3px 0;
 }
 
 .insight-amount {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #ff5370;
 }
 
 .insight-category {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #888;
 }
 
 .expense-chart {
   background-color: #fff;
-  padding: 20px;
+  padding: 15px;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-height: 200px; /* Set a max height for the chart */
+  overflow: hidden;
 }
 
-/* Expense Form Styles */
-.expense-form {
-  margin-top: 20px;
+.expense-chart h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+/* Expense Form and Budget Form Styles */
+.expense-form, .budget-form {
+  margin-top: 10px;
   display: flex;
-  gap: 10px;
+  gap: 5px;
   flex-wrap: wrap;
 }
 
-.expense-form input {
-  padding: 8px;
+.expense-form input, .budget-form input {
+  padding: 5px;
   border: 1px solid #ddd;
   border-radius: 5px;
   flex: 1;
-  min-width: 120px;
+  min-width: 80px;
 }
 
-.expense-form button {
-  padding: 8px 12px;
+.expense-form button, .budget-form button {
+  padding: 5px 10px;
   background-color: #ff5370;
   color: #fff;
   border: none;
@@ -93,7 +101,51 @@
   transition: background 0.3s;
 }
 
-.expense-form button:hover {
+.expense-form button:hover, .budget-form button:hover {
   background-color: #e04a60;
+}
+
+/* Budget Section Styles */
+.budget-section {
+  margin-top: 10px;
+}
+
+.budget-item {
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 8px;
+  margin-top: 3px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #ff5370;
+}
+
+.alert {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+/* Spending Alerts */
+.spending-alerts {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.alert-message {
+  color: #856404;
+  font-size: 0.8rem;
+  margin: 3px 0;
 }
 
